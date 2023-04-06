@@ -2,6 +2,20 @@
 
 no terminal da pasta:
    npx create-react-app client
+   npm start -> na pasta client
+
+
+ver
+http://localhost:3000
+http://localhost:3000/index.html
+
+
+https://mui.com/
+
+no terminal:
+   npm install @mui/material @emotion/react @emotion/styled  (usar esse)
+   npm install @mui/material @mui/styled-engine-sc styled-components
+
 
 
 
