@@ -3,8 +3,13 @@ import { AppBar, Toolbar, styled } from '@mui/material'
 
 
 const Header = styled(AppBar)`
-   background: #111111;
+   background: orange; //  #111111;
    
+`
+
+const Tabs = styled('p')`
+   font-size: 20px;
+   margin-right: 20px;
 `
 
 
@@ -12,11 +17,11 @@ const Header = styled(AppBar)`
 const NavBar = () => {
 
    return (
-      <Header>
+      <Header position="static" >
          <Toolbar>
-            <p>Code for Interview</p>
-            <p>All Users</p>
-            <p>Add User</p>
+            <Tabs>Code for Interview</Tabs>
+            <Tabs>All Users</Tabs>
+            <Tabs>Add User</Tabs>
          </Toolbar>
       </Header>
    )
