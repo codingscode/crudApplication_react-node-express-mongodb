@@ -1,0 +1,15 @@
+
+
+no terminal da pasta:
+   npx create-react-app client
+
+
+
+
+
+
+
+
+
+
+
