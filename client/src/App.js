@@ -9,17 +9,23 @@ import AllUsers from './components/AllUsers'
 
 
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+
+
 function App() {
    
   return (
-     <div >
-        Olá
+     <BrowserRouter >
         <NavBar />
-        <CodeforInterview />
-        <AllUsers />
-        <AddUser />
+        <Routes>
+           <Route path='/' element={<CodeforInterview />}  />
+           <Route path='/all' element={<AllUsers />}  />
+           <Route path='/add' element={<AddUser />}  />
+           
+        </Routes>
 
-     </div>
+     </BrowserRouter>
    )
 }
 

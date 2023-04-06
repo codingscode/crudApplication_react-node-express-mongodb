@@ -19,6 +19,16 @@ no terminal:
 
 
 
+no terminal:
+   npm i react-router-dom
+
+
+ver
+http://localhost:3000
+http://localhost:3000/all
+http://localhost:3000/add
+
+
 
 
 
