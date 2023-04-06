@@ -1,19 +1,24 @@
 
-import { AppBar, Toolbar } from '@mui/material'
+import { AppBar, Toolbar, styled } from '@mui/material'
 
+
+const Header = styled(AppBar)`
+   background: #111111;
+   
+`
 
 
 
 const NavBar = () => {
 
    return (
-      <AppBar>
+      <Header>
          <Toolbar>
             <p>Code for Interview</p>
             <p>All Users</p>
             <p>Add User</p>
          </Toolbar>
-      </AppBar>
+      </Header>
    )
 }
 
