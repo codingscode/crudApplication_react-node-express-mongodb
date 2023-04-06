@@ -1,10 +1,19 @@
 
+import { AppBar, Toolbar } from '@mui/material'
+
+
 
 
 const NavBar = () => {
 
    return (
-      <p>Olá de NavBar</p>
+      <AppBar>
+         <Toolbar>
+            <p>Code for Interview</p>
+            <p>All Users</p>
+            <p>Add User</p>
+         </Toolbar>
+      </AppBar>
    )
 }
 
