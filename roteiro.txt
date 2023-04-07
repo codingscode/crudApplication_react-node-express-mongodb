@@ -29,7 +29,7 @@ http://localhost:3000/all
 http://localhost:3000/add
 
 
-experimentar nos nomes do nav e ver a mudança de url
+experimentar nos nomes do nav e ver a mudança de url *idem
 
 
 
