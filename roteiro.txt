@@ -48,9 +48,16 @@ no terminal:
 
 
 
+na pasta server:
+   npm init
+   npm i express
+   npm start
 
 
+em package.json acrescentar "type": "module"
 
+ver
+http://localhost:8000/
 
 
 
