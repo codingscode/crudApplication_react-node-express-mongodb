@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import { FormControl, FormGroup, InputLabel, Input, Typography, styled, Button } from '@mui/material'
 
 
@@ -10,12 +11,24 @@ const Container = styled(FormGroup)`
    }
    
 `
-const onValueChange = (e) => {
-   console.log(e.target.name, e.target.value)
+
+const defaultValue = {
+   name: '',
+   username: '',
+   email: '',
+   phone: ''
 }
 
 
 const AddUser = () => {
+
+   const [user, setUser] = useState(defaultValue)
+
+   const onValueChange = (e) => {
+      console.log(e.target.name, e.target.value)
+      setUser({ ...user, [e.target.name]: e.target.value })
+      console.log(user)
+   }
 
    return (
       <Container>

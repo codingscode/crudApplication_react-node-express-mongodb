@@ -41,6 +41,7 @@ digitar nos campos e ver console
 é imprimido o nome do campo e o seu valor
 
 
+preenchendo os campos, imprime o objeto
 
 
 
