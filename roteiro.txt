@@ -43,7 +43,8 @@ digitar nos campos e ver console
 
 preenchendo os campos, imprime o objeto
 
-
+no terminal:
+   npm i axios
 
 
 

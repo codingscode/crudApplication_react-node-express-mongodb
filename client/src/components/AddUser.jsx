@@ -1,6 +1,8 @@
 
 import { useState } from 'react'
 import { FormControl, FormGroup, InputLabel, Input, Typography, styled, Button } from '@mui/material'
+import { addUser } from '../service/api'
+
 
 
 const Container = styled(FormGroup)`
@@ -25,9 +27,12 @@ const AddUser = () => {
    const [user, setUser] = useState(defaultValue)
 
    const onValueChange = (e) => {
-      console.log(e.target.name, e.target.value)
       setUser({ ...user, [e.target.name]: e.target.value })
-      console.log(user)
+      
+   }
+
+   const addUserDetails = async () => {
+      await addUser(user)
    }
 
    return (
@@ -50,7 +55,7 @@ const AddUser = () => {
             <Input onChange={(e) => onValueChange(e)} name='phone'  />
          </FormControl>
          <FormControl>
-            <Button variant='contained'>Add User</Button>
+            <Button variant='contained' onClick={() => addUserDetails()} >Add User</Button>
          </FormControl>
       </Container>
    )
