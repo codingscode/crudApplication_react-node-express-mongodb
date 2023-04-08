@@ -11,7 +11,7 @@ const Container = styled(FormGroup)`
    
 `
 const onValueChange = (e) => {
-   console.log(e.target.value)
+   console.log(e.target.name, e.target.value)
 }
 
 
@@ -22,19 +22,19 @@ const AddUser = () => {
          <Typography variant='h4' >Add User</Typography>
          <FormControl>
             <InputLabel>Name</InputLabel>
-            <Input onChange={(e) => onValueChange(e)} />
+            <Input onChange={(e) => onValueChange(e)} name='name' />
          </FormControl>
          <FormControl>
             <InputLabel>Username</InputLabel>
-            <Input onChange={(e) => onValueChange(e)}  />
+            <Input onChange={(e) => onValueChange(e)} name='username'  />
          </FormControl>
          <FormControl>
             <InputLabel>Email</InputLabel>
-            <Input onChange={(e) => onValueChange(e)}  />
+            <Input onChange={(e) => onValueChange(e)} name='email'  />
          </FormControl>
          <FormControl>
             <InputLabel>Phone</InputLabel>
-            <Input onChange={(e) => onValueChange(e)}  />
+            <Input onChange={(e) => onValueChange(e)} name='phone'  />
          </FormControl>
          <FormControl>
             <Button variant='contained'>Add User</Button>

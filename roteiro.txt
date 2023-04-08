@@ -38,7 +38,7 @@ digitar no primeiro campo e ver console
 
 digitar nos campos e ver console
 
-
+é imprimido o nome do campo e o seu valor
 
 
 
