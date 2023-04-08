@@ -51,7 +51,11 @@ no terminal:
 na pasta server:
    npm init
    npm i express
+   npm i mongoose
+   npm i nodemon
+   npm i dotenv
    npm start
+
 
 
 em package.json acrescentar "type": "module"
