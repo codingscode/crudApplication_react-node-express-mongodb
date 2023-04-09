@@ -78,7 +78,13 @@ em http://localhost:3000/add
 
 idem
 
+idem aparece no terminal:
+"""
+Server is running successfully on PORT 8000
+Database connected successfully
+undefined
 
+"""
 
 
 

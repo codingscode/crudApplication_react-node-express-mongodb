@@ -1,7 +1,11 @@
 
 
 export const addUser = (request, response) => {
-   console.log('Hello from addUser')
+   const user = request.body
+   
+   console.log(user)
+
+
 }
 
 
