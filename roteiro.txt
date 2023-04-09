@@ -55,6 +55,7 @@ na pasta server:
    npm i nodemon
    npm i dotenv
    npm i cors
+   npm i body-parser
    npm start
 
 
@@ -86,7 +87,18 @@ undefined
 
 """
 
+preenchendo o formulario e enviando aparece no terminal:
+"""
+Server is running successfully on PORT 8000
+Database connected successfully
+{
+  name: 'mel',
+  username: 'meljinha',
+  email: 'mel@gmail.com',
+  phone: '56712312312983'
+}
 
+"""
 
 
 
