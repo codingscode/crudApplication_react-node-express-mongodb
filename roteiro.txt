@@ -54,6 +54,7 @@ na pasta server:
    npm i mongoose
    npm i nodemon
    npm i dotenv
+   npm i cors
    npm start
 
 
@@ -64,7 +65,16 @@ ver
 http://localhost:8000/
 
 
-
+em http://localhost:3000/add
+   ver em Network -> Fetch/XHR -> aparece 'add' quando envia o formulario
+   em console do terminal aparece:
+   """
+      Server is running successfully on PORT 8000
+      Database connected successfully
+      Hello from add
+      Hello from add
+      Hello from add
+   """
 
 
 

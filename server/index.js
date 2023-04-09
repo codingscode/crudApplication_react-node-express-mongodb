@@ -1,8 +1,11 @@
 
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
+
 
 import Connection from './database/db.js'
+import routes from './routes/route.js'
 
 
 
@@ -10,6 +13,10 @@ import Connection from './database/db.js'
 const app = express()
 
 dotenv.config()
+
+app.use(cors())
+
+app.use('/', routes)
 
 const PORT = 8000
 
