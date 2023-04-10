@@ -101,6 +101,8 @@ Database connected successfully
 
 """
 
+no commit anterior estava dando erro na parte comentada
+
 
 
 
