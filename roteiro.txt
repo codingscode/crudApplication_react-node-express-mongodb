@@ -104,7 +104,9 @@ Database connected successfully
 no commit anterior estava dando erro na parte comentada
 
 
-
+ir em http://localhost:3000/all
+   ver Network -> Fetch/XHR -> Name -> "all" -> "Cannot GET /all"
+   
 
 
 

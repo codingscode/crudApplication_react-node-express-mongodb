@@ -8,7 +8,7 @@ import User from '../schema/user-schema.js'
 export const addUser = async (request, response) => {
    const user = request.body
    
-   console.log(user)
+   //console.log(user)
 
    const newUser = new User(user)
    
