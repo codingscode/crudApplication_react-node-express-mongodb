@@ -17,7 +17,11 @@ const THead = styled(TableRow)`
    }
 `
 
-
+const TBody = styled(TableRow)`
+   & > td {
+      font-size: 20px;
+   }
+`
 
 
 const AllUsers = () => {
@@ -44,18 +48,20 @@ const AllUsers = () => {
                 <TableCell>Username</TableCell>
                 <TableCell>Email</TableCell>
                 <TableCell>Phone</TableCell>
+                <TableCell></TableCell>
              </THead>
           </TableHead>
           <TableBody>
              {
                 users.map((user, i) => (
-                   <TableRow key={i} >
+                   <TBody key={i} >
                       <TableCell>{i}</TableCell> 
                       <TableCell>{user.name}</TableCell> 
                       <TableCell>{user.username}</TableCell> 
                       <TableCell>{user.email}</TableCell> 
                       <TableCell>{user.phone}</TableCell> 
-                   </TableRow>
+                      <TableCell></TableCell> 
+                   </TBody>
                 ))
              }
           </TableBody>
