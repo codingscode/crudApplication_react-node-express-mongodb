@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react'
 import { Table, TableHead, TableCell, TableRow, TableBody, styled, Button } from '@mui/material'
 import { getUsers } from '../service/api'
+import { Link } from 'react-router-dom'
+
 
 
 const StyledTable = styled(Table)`
@@ -61,7 +63,7 @@ const AllUsers = () => {
                       <TableCell>{user.email}</TableCell> 
                       <TableCell>{user.phone}</TableCell> 
                       <TableCell>
-                         <Button variant='contained' >Edit</Button>
+                         <Button variant='contained' style={{ marginRight: 10 }} component={Link} to={`/edit/${user._id}`} >Edit</Button>
                          <Button variant='contained' color='secondary' >Delete</Button>
                       </TableCell>
                    </TBody>

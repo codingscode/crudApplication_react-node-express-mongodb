@@ -115,7 +115,7 @@ em http://localhost:3000/add  preenchendo os campos e enviando
    direcionara para http://localhost:3000/all
 
 
-
+ir em AllUsers e clicar em "edit" e a página será redirecionada
 
 
 
