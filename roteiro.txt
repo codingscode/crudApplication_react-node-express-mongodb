@@ -109,7 +109,7 @@ ir em http://localhost:3000/all
 ^^^ -> deixa de ficar vermelho   
 
 
-
+ver o console do navegador
 
 
 
