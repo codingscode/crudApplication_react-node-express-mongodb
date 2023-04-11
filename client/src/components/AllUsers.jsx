@@ -1,7 +1,22 @@
 
 import { useEffect, useState } from 'react'
-import { Table, TableHead, TableCell, TableRow, TableBody } from '@mui/material'
+import { Table, TableHead, TableCell, TableRow, TableBody, styled } from '@mui/material'
 import { getUsers } from '../service/api'
+
+
+const StyledTable = styled(Table)`
+   width: 90%;
+   margin: 50px auto 0 auto;
+`
+
+const THead = styled(TableRow)`
+   background: #000000;
+   & > th {
+      color: #fff;
+      font-size: 20px;
+   }
+`
+
 
 
 
@@ -21,15 +36,15 @@ const AllUsers = () => {
    }
 
     return (
-       <Table>
+       <StyledTable>
           <TableHead>
-             <TableRow>
+             <THead>
                 <TableCell>Id</TableCell>
                 <TableCell>Name</TableCell>
                 <TableCell>Username</TableCell>
                 <TableCell>Email</TableCell>
                 <TableCell>Phone</TableCell>
-             </TableRow>
+             </THead>
           </TableHead>
           <TableBody>
              {
@@ -44,7 +59,7 @@ const AllUsers = () => {
                 ))
              }
           </TableBody>
-       </Table>
+       </StyledTable>
     )
 }
 
