@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import { Table, TableHead, TableCell, TableRow, TableBody, styled } from '@mui/material'
+import { Table, TableHead, TableCell, TableRow, TableBody, styled, Button } from '@mui/material'
 import { getUsers } from '../service/api'
 
 
@@ -60,7 +60,10 @@ const AllUsers = () => {
                       <TableCell>{user.username}</TableCell> 
                       <TableCell>{user.email}</TableCell> 
                       <TableCell>{user.phone}</TableCell> 
-                      <TableCell></TableCell> 
+                      <TableCell>
+                         <Button variant='contained' >Edit</Button>
+                         <Button variant='contained' color='secondary' >Delete</Button>
+                      </TableCell>
                    </TBody>
                 ))
              }
