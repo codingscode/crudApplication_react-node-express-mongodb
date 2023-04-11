@@ -111,7 +111,8 @@ ir em http://localhost:3000/all
 
 ver o console do navegador
 
-
+em http://localhost:3000/add  preenchendo os campos e enviando
+   direcionara para http://localhost:3000/all
 
 
 
