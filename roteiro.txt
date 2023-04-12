@@ -133,7 +133,7 @@ idem
 
 escolher um e ver edit user
 
-
+clicar em edit, modificar e clicar no botao 'edit user'
 
 
 

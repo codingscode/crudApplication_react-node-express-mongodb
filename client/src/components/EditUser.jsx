@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import { FormControl, FormGroup, InputLabel, Input, Typography, styled, Button } from '@mui/material'
-import { addUser, getUser } from '../service/api'
+import { editUser, getUser } from '../service/api'
 import { useNavigate, useParams } from 'react-router-dom'
 
 
@@ -45,8 +45,8 @@ const EditUser = () => {
       
    }
 
-   const addUserDetails = async () => {
-      await addUser(user)
+   const editUserDetails = async () => {
+      await editUser(user, id)
       navigate('/all')
    }
 
@@ -70,7 +70,7 @@ const EditUser = () => {
             <Input onChange={(e) => onValueChange(e)} name='phone' value={user.phone} />
          </FormControl>
          <FormControl>
-            <Button variant='contained' onClick={() => addUserDetails()} >Edit User</Button>
+            <Button variant='contained' onClick={() => editUserDetails()} >Edit User</Button>
          </FormControl>
       </Container>
    )

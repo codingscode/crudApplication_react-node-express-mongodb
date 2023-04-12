@@ -37,6 +37,17 @@ export const getUser = async (id) => {
 
 }
 
+export const editUser = async (user, id) => {
+   try {
+      return await axios.post(`${URL}/${id}`, user)
+   }
+   catch (error) {
+      console.log('Error while calling api', error)
+   }
+
+
+}
+
 
 
 
