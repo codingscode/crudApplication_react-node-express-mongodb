@@ -43,7 +43,7 @@ const AllUsers = () => {
 
    const deleteUserDetails = async (id) => {
       await deleteUser(id)
-   
+      getAllUsers()
    }
 
     return (

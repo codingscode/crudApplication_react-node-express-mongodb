@@ -62,6 +62,7 @@ export const editUser = async (request, response) => {
 export const deleteUser = async (request, response) => {
    try {
       await User.deleteOne({ _id: request.params.id })
+      response.status(200).json({ message: 'User deleted successfully' })
    }
    catch (error) {
       response.status(409).json({ message: error.message })
