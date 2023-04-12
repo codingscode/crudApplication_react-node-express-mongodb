@@ -117,7 +117,14 @@ em http://localhost:3000/add  preenchendo os campos e enviando
 
 ir em AllUsers e clicar em "edit" e a página será redirecionada
 
-
+clicando em edit de um dos usuarios aparece no console do terminal:
+   """
+   Server is running successfully on PORT 8000
+   Database connected successfully
+   6434a00e203686ede1193c99
+   6434a00e203686ede1193c99
+   
+   """
 
 
 

@@ -24,9 +24,20 @@ export const getUsers = async () => {
    catch (error) {
       console.log('Error while calling getUsers API', error)
    }
-
    
 }
+
+export const getUser = async (id) => {
+   try {
+      return await axios.get(`${URL}/${id}`)
+   }
+   catch (error) {
+      console.log('Error while calling getUser api', error)
+   }
+
+}
+
+
 
 
 
