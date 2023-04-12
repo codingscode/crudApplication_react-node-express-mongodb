@@ -131,7 +131,7 @@ em http://localhost:3000/edit/6434a00e203686ede1193c99   [em edit usuario]
 
 idem
 
-
+escolher um e ver edit user
 
 
 
