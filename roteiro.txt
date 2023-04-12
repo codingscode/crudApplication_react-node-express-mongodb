@@ -126,6 +126,8 @@ clicando em edit de um dos usuarios aparece no console do terminal:
    
    """
 
+em http://localhost:3000/edit/6434a00e203686ede1193c99   [em edit usuario]
+   ver em Network -> Fetch/XHR -> Name > fica com nome do id
 
 
 
